@@ -6,6 +6,14 @@
 <p align="center">
   <img width="519" height="385" alt="image" src="https://i.giphy.com/d8C9QwHsFQgR39MSTq.webp" />
 </p>
+
+<br><h1>
+-> output lk this <-
+</h1><br>
+<p align="center">
+  <img width="429" height="333" alt="image" src="https://github.com/user-attachments/assets/881a8736-b476-4df7-a83f-a477455c61d6" />
+</p>
+
 <br>
 It can be useful in the development of file converters, file compression, data transmission, etc.<br>
 Regarding any potential code changes, I recommend not altering the project's architecture.
