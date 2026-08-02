@@ -56,7 +56,7 @@ public class main {
         JMenu menuAbout = new JMenu("About");
         JMenuItem itemRepo = new JMenuItem("Repository");
         itemRepo.addActionListener(e -> {
-            try { Desktop.getDesktop().browse(new java.net.URI("https://github.com/")); }
+            try { Desktop.getDesktop().browse(new java.net.URI("https://github.com/CaioKotan/DDumper")); }
             catch (Exception ex) { ex.printStackTrace(); }
         });
         JMenuItem itemAuthor = new JMenuItem("Author");

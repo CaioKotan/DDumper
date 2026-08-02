@@ -9,3 +9,28 @@ javac -cp "lib/flatlaf-3.5.4.jar" -d bin src\main.java
 
 ->rodar o aplicativo pelo java
 java -cp "bin;lib/flatlaf-3.5.4.jar" main
+
+para criar o jar: // caso o flatlaf já tenha sido extraido
+
+mkdir package
+jar cfm package\DDumper.jar manifest.txt -C bin .
+
+para criar o exe // caso o jar já tenha sido criado
+
+# 1. Cria uma pasta temporária só com o essencial
+mkdir package
+
+# 2. Gera o exe apontando pra essa pasta
+jpackage --name "DDumper" --input package --main-jar DDumper.jar --type app-image --icon assets/icon.ico --dest ..\dist-v1.0.1
+
+# 3. apaga a pasta package
+rmdir /S /Q package
+
+#4. adiciona postpackage -> assets e bin
+
+//criando pastas
+mkdir ..\dist-v1.0.1\DDumper\assets
+mkdir ..\dist-v1.0.1\DDumper\bin
+copy bin\dumper.exe ..\dist-v1.0.1\DDumper\bin
+copy assets\icon.ico ..\dist-v1.0.1\DDumper\assets
+copy assets\icon.png ..\dist-v1.0.1\DDumper\assets
