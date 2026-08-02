@@ -5,8 +5,6 @@
 </p>
 <br>
 It can be useful in the development of file converters, file compression, data transmission, etc.<br>
-<h1>build</h1><br>
 Regarding any potential code changes, I recommend not altering the project's architecture.
 then 4 build the C file:<br>
-
 <h1>->gcc -o bin/dumper.exe src/dumper.c in the "DDumper" directory</h1><br>
